@@ -1,0 +1,140 @@
+<head>
+    <title>Olya's website</title>
+    <!--permet d'inclure le css -->
+    <link rel="stylesheet" type="text/css" href="./tictactoe/tictactoe.css">
+    <link rel="stylesheet" type="text/css" href="./langton/langton.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./shapes/shapes.css">
+
+</head>
+
+<body>
+    <h1 id="mainHeader">Olya's website</h1>
+    <nav>
+        <div class="menu">
+
+            <ul>
+                <li class="menu-html" id="mainButton"><a href="#">Main page</a></li>
+                <li class="menu-html" id="tictactoeButton"><a href="#">Tictactoe</a></li>
+                <li class="menu-html" id="langtonButton"><a href="#">Langton ant</a></li>
+                <li class="menu-html" id="shapesButton"><a href='#'>Shapes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="main" class="page show">
+        <p id="mainDescription">All cats require some level of grooming and most of it can be done right in your house.
+            The type of grooming that your feline needs is based on factors like her hair type or the climate. Cats
+            require more grooming as the weather warms up, as they lose their winter coat.</p>
+        <img id="cats" src="./images/cat.jpg" alt="cats grooming">
+    </section>
+
+
+
+    <section id="tictactoe" class="page">
+        <div>
+            <h1 id="title">Tic-Tac-Toe!</h1>
+        </div>
+
+        <table id="board">
+            <tr>
+                <td id="case1"></td>
+                <td id="case2"></td>
+                <td id="case3"></td>
+            </tr>
+            <tr>
+                <td id="case4"></td>
+                <td id="case5"></td>
+                <td id="case6"></td>
+            </tr>
+            <tr>
+                <td id="case7"></td>
+                <td id="case8"></td>
+                <td id="case9"></td>
+            </tr>
+        </table>
+        <div id="winnerMessage"></div>
+        <div id="footer">
+            <input id="btn_reset" type="button" value="Reset">
+        </div>
+
+    </section>
+
+    <section id="langton" class="page">
+        <h1 id="langtonHeader1">Langton ant grid</h1>
+        <div id="langtonBoard">
+        </div>
+        <h1 id="langtonHeader2">Langton ant canvas</h1>
+        <canvas id="grid" width="1000" height="1000"></canvas>
+    </section>
+
+    <section id="shapes" class="page">
+        <h1 id="shapesHeader">Change the shapes!</h1>
+        <div class="flex-grid">
+            <div id="inputs">
+                <div id="circle">
+                    <h3 class="shapesName">Circle</h2>
+                        <p class="attribute">Color</p>
+                        <input type="text" id="circleColorInput" class="colorInput" name="txt"
+                            placeholder="type your color" value="red" />
+                        <p class="attribute">Radius</p>
+                        <input type="range" id="range" class="slider" min="10" max="100" step="1" value="0">
+                </div>
+                <div id="triangle">
+                    <h3 class="shapesName">Triangle</h2>
+                        <p class="attribute">Color</p>
+                        <input type="text" id="triangleColorInput" class="colorInput" name="color"
+                            placeholder="type your color" value="black" />
+                        <p class="attribute">Position</p>
+                        <label for="X1">x1:</label>
+                        <input type="number" class="number" id="numberX1" name="x1" min="0" max="800" value="20">
+                        <label for="Y1">y1:</label>
+                        <input type="number" class="number" id="numberY1" name="Y1" min="0" max="800" value="20">
+                        <p></p>
+                        <label for="X2">x2:</label>
+                        <input type="number" class="number" id="numberX2" name="X2" min="0" max="7" value="60">
+                        <label for="Y2">y2:</label>
+
+                        <input type="number" class="number" id="numberY2" name="Y2" min="0" max="100" value="80">
+                        <p></p>
+                        <label for="X3">x3:</label>
+                        <input type="number" class="number" id="numberX3" name="X3" min="0" max="100" value="140">
+                        <label for="Y3">y3:</label>
+                        <input type="number" class="number" id="numberY3" name="Y3" min="0" max="100" value="20">
+                </div>
+                <div id="square">
+                    <h3 class="shapesName">Square</h2>
+                        <p class="attribute">Color</p>
+                        <input type="text" id="squareColorInput" class="colorInput" name="txt"
+                            placeholder="type your color" value="blue" />
+                        <p></p>
+                </div>
+                <div id="shapesFooter">
+                    <input id="btn_validate" type="button" value="Validate">
+                </div>
+            </div>
+
+            <div id="blocCanvas">
+                <canvas id="shapesCnvs" width="250" height="250"></canvas>
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        const shapesCanvas = new ShapesCanvas();
+                        document.getElementById("btn_validate").addEventListener("click", () => {
+                            shapesCanvas.draw();
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </section>
+
+
+    <!--permet d'inclure le javascript -->
+    <script src="./index.js" type="module"></script>
+    <script src="./tictactoe/tictactoe.js" type="module"></script>
+    <script src="./langton/langton.js" type="module"></script>
+    <script src="./langton/langtoncanvas.js"></script>
+    <script src="./shapes/shapes.js"></script>
+</body>
+
+</html>

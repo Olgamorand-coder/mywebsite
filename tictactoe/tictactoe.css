@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Redressed&display=swap');
+
+#tictactoe{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    background-color:#fefcfb;
+}
+#title{
+    color: black;
+    text-align: center;
+}
+#board{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+td{
+    border:1px solid black;
+    height:64px;
+    width:64px;
+    background-color: white;
+}
+.croix{
+    background-size: 100%;
+    background-image: url("../images/croix.jpg");
+}
+.zero{
+    background-size: 100%;
+    background-image: url("../images/zero.jpg");
+}

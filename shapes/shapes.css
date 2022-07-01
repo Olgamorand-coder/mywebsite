@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=League+Gothic&family=Playfair+Display:ital@0;1&family=Redressed&family=Square+Peg&display=swap');
+
+
+
+#shapesHeader {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.shapesName {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    padding-right: 0px;
+    background-color: #e98d3a;
+}
+
+.flex-grid {
+    display:flex;
+    justify-content: center;
+}
+
+#inputs {
+    margin:20px;
+}
+
+#blocCanvas {
+    margin:20px;
+}
+
+#shapesCnvs {
+    border:solid 1px black;
+}
+
+.colorInput {
+    padding: 12px;
+    background-color: #e98d3a69;
+}
+
+.colorInput,
+.number {
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border-radius: 5px;
+    width: 130px;
+}
+
+.number {
+
+    padding-right: 5px;
+    background-color: #e98d3a69;
+}
+
+.slider {
+    color: #e98d3a;
+}
+
+#btn_validate {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 7.5em;
+}

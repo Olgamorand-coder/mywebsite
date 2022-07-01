@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=League+Gothic&family=Playfair+Display:ital@0;1&family=Redressed&family=Square+Peg&display=swap');
+body {
+    font-family: 'Source code pro', Calibri, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fefcfb;
+}
+
+nav {
+    width: 100%;
+    background-color: #e98d3a;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+}
+
+.menu-html:hover {
+    border-top: 5px solid #fefcfb;
+    background-color: RGBa(254, 252, 251, 0.15);
+}
+
+.menu-contact:hover {
+    border-top: 5px solid #fefcfb;
+    background-color: RGBa(254, 252, 251, 0.15);
+}
+
+nav li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+
+.menu {
+    display: table;
+    margin: 0 auto;
+}
+
+.page {
+    display: none;
+}
+
+.page.show {
+    display: block;
+}
+#mainHeader{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    background-color:#fefcfb;
+    font-weight: 400;
+}
+p{
+  margin-left: 40px; 
+  margin-right: 40px;
+  font-family: 'Caveat', cursive;
+}
+#cats{
+    width:500px;
+    display: block;
+    margin: auto;
+    border-radius:25px;
+
+}
+
+#langtonHeader1{
+    text-align:center;
+    font-family: 'Caveat', cursive;
+}
+#langtonHeader2{
+    text-align:center;
+    font-family: 'Caveat', cursive;
+}
+
+input[type="button"]{
+    color: white;
+    background-color: #e98d3a;
+    border-radius: 20px;
+    padding: 0.5em 2em;
+}

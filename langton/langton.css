@@ -1,0 +1,26 @@
+table,
+#grid {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: block;
+    border: 3px solid #e98d3a;
+}
+
+#langton td {
+    width: 5px;
+    height: 5px;
+    border: solid 1px black;
+}
+
+table .ant {
+    background-color: crimson;
+
+    border: solid 1px crimson;
+}
+
+.black {
+    background-color: black;
+}
