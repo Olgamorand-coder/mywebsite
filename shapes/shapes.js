@@ -2,7 +2,7 @@ class ShapesCanvas{
     constructor(){
         this.canvas = document.getElementById("shapesCnvs");
         this.ctx = this.canvas.getContext('2d');
-        this.circle = new Circle( 100, 100, document.getElementById("range").value, document.getElementById("circleColorInput").value);
+        this.circle = new Circle( 100, 100, document.getElementById("circleRange").value, document.getElementById("circleColorInput").value);
         this.triangle=new Triangle(document.getElementById("numberX1").value, document.getElementById("numberY1").value, document.getElementById("numberX2").value, document.getElementById("numberY2").value, document.getElementById("numberX3").value, document.getElementById("numberY3").value, document.getElementById("triangleColorInput").value)
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.square=new Square(20, 150, 100, 100, document.getElementById("squareColorInput").value)

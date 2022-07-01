@@ -78,7 +78,7 @@
                         <input type="text" id="circleColorInput" class="colorInput" name="txt"
                             placeholder="type your color" value="red" />
                         <p class="attribute">Radius</p>
-                        <input type="range" id="range" class="slider" min="10" max="100" step="1" value="0">
+                        <input type="range" id="circleRange" class="slider" min="10" max="100" step="1" value="0">
                 </div>
                 <div id="triangle">
                     <h3 class="shapesName">Triangle</h2>
@@ -118,8 +118,9 @@
                 <canvas id="shapesCnvs" width="250" height="250"></canvas>
                 <script>
                     document.addEventListener("DOMContentLoaded", () => {
-                        const shapesCanvas = new ShapesCanvas();
+                        //const shapesCanvas = new ShapesCanvas();
                         document.getElementById("btn_validate").addEventListener("click", () => {
+                            const shapesCanvas=new ShapesCanvas();
                             shapesCanvas.draw();
                         })
                     })
