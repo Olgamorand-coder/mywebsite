@@ -7,6 +7,7 @@ table,
     margin: auto;
     display: block;
     border: 3px solid #e98d3a;
+    margin-bottom: 3em;
 }
 
 #langton td {
